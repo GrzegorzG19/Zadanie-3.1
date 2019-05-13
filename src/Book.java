@@ -1,13 +1,16 @@
 public class Book {
-    String tytul;
-    int strony;
-    String rodzaj;
+    String name;
+    int pages;
+    String genre;
 
     Book(String tl, int st, String rj){
-        tytul = tl;
-        strony = st;
-        rodzaj = rj;
+        name = tl;
+        pages = st;
+        genre = rj;
     }
 
 
+    void getinfo(String tl, int pg, String gr){
+        System.out.println("book: " + tl + " pages: " + pg + " genre: " + gr);
+    }
 }
